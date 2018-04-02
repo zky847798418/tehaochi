@@ -1,0 +1,106 @@
+html,body{
+  height:100%;
+  overflow:hidden;
+  overflow-y: scroll;
+  line-height: 1.6;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  font-family: 'Helvetica Neue',Tahoma,Arial,PingFangSC-Regular,'Hiragino Sans GB','Microsoft Yahei',sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.floatAfter:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+a:hover,a:link,a:visited,a:active{
+  text-decoration: none;
+}
+.border:after,.borderTop:before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+  border-color: #e7e7e7;
+}
+.border:after{
+  bottom: 0;
+}
+.borderTop:before{
+  top:0
+}
+//.borderAll{
+//  position: relative;
+//}
+//.borderAll:after{
+//  position:absolute;
+//  content: "";
+//  height:1px;
+//  background:rgba(0,0,0,.2);
+//  left: 0;
+//  right: 0;
+//}
+//
+//.borderAll:before{
+//  top:0;
+//}
+//.borderAll:after{
+//  bottom:0;
+//}
+//@media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (-ms-high-contrast:active), (-ms-high-contrast:none) {
+//  .borderAll:before,.borderAll:after{
+//    -webkit-transform:scaleY(.5);
+//    -ms-transform:scaleY(.5);
+//    -o-transform:scaleY(.5);
+//    transform:scaleY(.5);
+//  }
+//}
+///* 解决1.5屏幕下某些边框不显式问题，小数位多写几位 */
+//@media (-webkit-device-pixel-ratio: 1.5) {
+//  /*上，下边框*/
+//  .borderAll:before,.borderAll:after {
+//    -webkit-transform: scaleY(.66666666);
+//    -ms-transform: scaleY(.66666666);
+//    -o-transform: scaleY(.66666666);
+//    transform: scaleY(.66666666);
+//  }
+//}
+//@media (-webkit-device-pixel-ratio: 3){
+//  /*上，下边框*/
+//  .borderAll:before,.borderAll:after{
+//    -webkit-transform:scaleY(.3333);
+//    -ms-transform:scaleY(.3333);
+//    -o-transform:scaleY(.3333);
+//    transform:scaleY(.3333);
+//  }
+//}
